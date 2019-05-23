@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
+// Material Ui
 import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -10,8 +11,8 @@ import ClickAwayListener from '@material-ui/core/ClickAwayListener';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import Tooltip from '@material-ui/core/Tooltip';
+
 // Material Icons
-import MenuIcon from '@material-ui/icons/Menu';
 import LanguageIcon from '@material-ui/icons/Language';
 
 // Translate Message
@@ -56,16 +57,14 @@ class ButtonAppBar extends Component {
 	};
 
 	render() {
-		const { classes } = this.props;
+		const { classes, lang } = this.props;
 		let { anchorEl } = this.state;
 
 		return (
 			<div className={classes.root}>
-				<AppBar position="static" className={classes.navBackground}>
+				<AppBar className={classes.navBackground}>
 					<Toolbar>
-						{/* 00 */}
-
-						<Typography variant="h6" color="inherit" className={classes.grow}>
+						<Typography variant="h6" color="inherit" className={lang === 'mm' ? `${classes.grow} mm-font` : `${classes.grow}`}>
 							<FormattedMessage
 								id="app.title"
 								defaultMessage="Welcome to BarNyar"
@@ -106,8 +105,9 @@ class ButtonAppBar extends Component {
 									onClick={() => {
 										this.setLanguageAndHandleClose('mm');
 									}}
+									className="mm-font"
 								>
-									ျမန္မာ{' '}
+									ျမန္မာ
 								</MenuItem>
 							</Menu>
 						</ClickAwayListener>
@@ -119,4 +119,9 @@ class ButtonAppBar extends Component {
 	}
 }
 
-export default connect(null, { setLanguage })(withStyles(styles)(ButtonAppBar));
+export default connect(
+	(state) => ({
+		lang: state.Language.lang
+	}),
+	{ setLanguage }
+)(withStyles(styles)(ButtonAppBar));

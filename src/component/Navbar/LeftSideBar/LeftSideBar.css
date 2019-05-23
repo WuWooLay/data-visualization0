@@ -1,0 +1,108 @@
+.LeftNav {
+    background-color: transparent;
+    list-style: none;
+    margin: 0;
+    margin-left: 4px;
+    padding: 0 0 20px 0;
+    position: fixed;
+    /* min-height: calc(100vh - 170px); */
+    top: 80px;
+    left: 0;
+    overflow-x: hidden;
+    border-radius: 4px;
+}
+@media screen and (min-width: 678px) {
+    .LeftNav {
+        background-color: #ffffff;
+        margin-left: 6px;
+        border: 1px solid #f5f0f0;
+    }
+}
+
+.LeftNav li {
+    display: block;
+    position: relative;
+    padding: 10px 0px;
+    transition: all 200ms ease-in-out;
+}
+@media screen and (min-width: 678px) {
+    .LeftNav li {
+        min-width: 268px;
+    }
+}
+
+
+.LeftNav li:hover {
+    background-color: #f9f9f9;
+}
+
+.LeftNav a {
+    color: #7d7d7d;
+    text-decoration: none;
+}
+
+.LeftNav .Icon {
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: relative;
+    padding: 3px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: 1px solid rgba(230, 230, 230, 0.9);
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 2px 1px -1px rgba(0,0,0,0.12);
+}
+
+@media screen and (min-width: 678px) {
+    .LeftNav .Icon {
+        position: absolute;
+        left: 10px ;
+        top: 55%;
+        transform: translateY(-50%);
+        padding: 0;
+        background-color: transparent;
+        border-radius: 0;
+        box-shadow: none;
+        border: 0px solid transparent;
+
+    }
+}
+
+.LeftNav .Icon > img {
+    width: 80%;
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@media screen and (min-width: 678px) {
+    .LeftNav .Icon > img {
+        position: relative;
+        width: 100%;
+    }
+}
+
+
+
+.LeftNav-Dispear {
+    display: none;
+    font-size: 20px;
+    padding-left: 50px;
+}
+
+@media screen and (min-width: 678px) {
+    .LeftNav-Dispear {
+        display: block
+    }
+}
+
+.LeftNav #NavLeft-None {
+    display: block;
+    cursor: pointer;
+} 
+
+@media screen and (min-width: 678px) {
+    .LeftNav #NavLeft-None {
+        display: none
+    }
+}

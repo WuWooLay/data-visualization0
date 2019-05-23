@@ -1,5 +1,9 @@
 {
-    "app.title": "ေဒတာ ဗစ္ဇူရယ္လုိက္ေဇးရွင္း",
-    "app.change_language": "ဘာသာစကားေျပာင္းမည္"
-
+    "app.title": "ေဒတာ ဗစ္ဇူရယ္လိုက္ေဇးရွင္း",
+    "app.change_language": "ဘာသာစကားပြောင်းမည်",
+    "app.dashboard": "ပင္မစာမ်က္ႏွာ",
+    "app.education": "ပညာေရး",
+    "app.overview": "ခ်ံဳငံုၾကည့္",
+    "app.question": "ဘာလဲ?"
+    
 }

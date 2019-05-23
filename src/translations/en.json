@@ -1,4 +1,8 @@
 {
     "app.title": "Data Visualization",
-    "app.change_language": "Change Language"
+    "app.change_language": "Change Language",
+    "app.dashboard": "Dashboard",
+    "app.education": "Education",
+    "app.overview": "Overview",
+    "app.question": "What?"
 }

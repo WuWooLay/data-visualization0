@@ -2,4 +2,24 @@ body {
 	margin: 0;
 	padding: 0;
 	background-color: #fafafa;
+	font-family: 'Raleway', sans-serif;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Quicksand', sans-serif;
+}
+
+@font-face {
+	font-family: "MMS2";
+	src: url("/font/mms2.eot");
+	src: url("/font/mms2.eot?#iefix") format("embedded-opentype"), url("/font/mms2.woff2") format("woff2"), url("/font/mms2.woff") format("woff"), url("/font/mms2.ttf") format("truetype"), url("/font/mms2.svg#mms2") format("svg");
+	font-weight: normal;
+	font-style: normal; }
+  
+  .mm-font {
+	font-family: "MMS2" !important; }
