@@ -1,33 +1,53 @@
 .LeftNav {
-    background-color: transparent;
-    list-style: none;
+
+    background-color: blue;
     margin: 0;
-    margin-left: 4px;
-    padding: 0 0 20px 0;
+    padding: 0;
     position: fixed;
-    /* min-height: calc(100vh - 170px); */
-    top: 80px;
+    width: 100%;
     left: 0;
-    overflow-x: hidden;
-    border-radius: 4px;
+    bottom: 0;
+    background-color: #ffffff;
+    border-top: 1px solid #eaeaea;
+    display: flex;
+    justify-content: center;
 }
 @media screen and (min-width: 678px) {
     .LeftNav {
+        list-style: none;
+        margin: 0;
+        margin-left: 4px;
+        padding: 0 0 20px 0;
+        position: fixed;
+        /* min-height: calc(100vh - 170px); */
+        bottom: auto;
+        top: 80px;
+        left: 0;
+        overflow-x: hidden;
+        border-radius: 4px;
         background-color: #ffffff;
         margin-left: 6px;
         border: 1px solid #f5f0f0;
+        width: 268px;
+        display: block;
     }
 }
 
 .LeftNav li {
-    display: block;
+    display: inline-block;
     position: relative;
-    padding: 10px 0px;
+    padding: 5px 0px;
     transition: all 200ms ease-in-out;
+    flex-grow: 1;
+    flex-flow: wrap;
+    text-align: center;
 }
 @media screen and (min-width: 678px) {
     .LeftNav li {
+        display: block;
+        padding: 10px 0px;
         min-width: 268px;
+        text-align: left;
     }
 }
 
@@ -44,7 +64,7 @@
 .LeftNav .Icon {
     width: 20px;
     height: 20px;
-    display: block;
+    display: inline-block;
     position: relative;
     padding: 3px;
     background-color: #ffffff;
@@ -55,6 +75,7 @@
 
 @media screen and (min-width: 678px) {
     .LeftNav .Icon {
+        display: block;
         position: absolute;
         left: 10px ;
         top: 55%;
@@ -97,7 +118,7 @@
 }
 
 .LeftNav #NavLeft-None {
-    display: block;
+    display: inline-block;
     cursor: pointer;
 } 
 
