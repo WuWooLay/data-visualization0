@@ -4,5 +4,8 @@
     "app.dashboard": "Dashboard",
     "app.education": "Education",
     "app.overview": "Overview",
-    "app.question": "What?"
+    "app.question": "What?",
+
+    "map.select": "Select",
+    "map.each": "Each"
 }

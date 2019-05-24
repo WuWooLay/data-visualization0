@@ -12,7 +12,7 @@
     display: flex;
     justify-content: center;
 }
-@media screen and (min-width: 678px) {
+@media screen and (min-width: 960px) {
     .LeftNav {
         list-style: none;
         margin: 0;
@@ -33,6 +33,16 @@
     }
 }
 
+@media screen and (min-width: 1500px) {
+    .LeftNav {
+        padding: 0 0 20px 0;
+        position: absolute;
+        bottom: auto;
+        top: 0;
+        left: 0;
+    }
+}
+
 .LeftNav li {
     display: inline-block;
     position: relative;
@@ -42,7 +52,7 @@
     flex-flow: wrap;
     text-align: center;
 }
-@media screen and (min-width: 678px) {
+@media screen and (min-width: 960px) {
     .LeftNav li {
         display: block;
         padding: 10px 0px;
@@ -73,7 +83,7 @@
     box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 2px 1px -1px rgba(0,0,0,0.12);
 }
 
-@media screen and (min-width: 678px) {
+@media screen and (min-width: 960px) {
     .LeftNav .Icon {
         display: block;
         position: absolute;
@@ -96,7 +106,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
-@media screen and (min-width: 678px) {
+@media screen and (min-width: 960px) {
     .LeftNav .Icon > img {
         position: relative;
         width: 100%;
@@ -111,7 +121,7 @@
     padding-left: 50px;
 }
 
-@media screen and (min-width: 678px) {
+@media screen and (min-width: 960px) {
     .LeftNav-Dispear {
         display: block
     }
@@ -119,10 +129,13 @@
 
 .LeftNav #NavLeft-None {
     display: inline-block;
-    cursor: pointer;
 } 
 
-@media screen and (min-width: 678px) {
+.LeftNav #NavLeft-None .Icon {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 960px) {
     .LeftNav #NavLeft-None {
         display: none
     }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 import { FormattedMessage } from 'react-intl';
@@ -10,9 +10,20 @@ import './LeftSideBar.css';
 import dataJson from './leftside.json';
 
 class LeftSideBar extends Component {
+	state = {
+		redirect: false
+	};
+
 	render() {
-		console.log(this.props);
+		// console.log(this.props);
+
+		// Check Language
 		const { lang } = this.props;
+
+		if (this.state.redirect) {
+			return <Redirect push to="/" />;
+		}
+
 		return (
 			<ul className="LeftNav">
 				{dataJson.map((data, index) => {
@@ -34,7 +45,7 @@ class LeftSideBar extends Component {
 					);
 				})}
 
-				<li id="NavLeft-None">
+				{/* <li id="NavLeft-None">
 					<span className={lang === 'mm' ? 'LeftNav-Dispear mm-font' : 'LeftNav-Dispear'}>
 						<FormattedMessage
 							id={'app.question'}
@@ -45,7 +56,7 @@ class LeftSideBar extends Component {
 					<span className="Icon">
 						<img src={`${process.env.PUBLIC_URL}/svg/navleft/question.svg`} alt="" />
 					</span>
-				</li>
+				</li> */}
 			</ul>
 		);
 	}
