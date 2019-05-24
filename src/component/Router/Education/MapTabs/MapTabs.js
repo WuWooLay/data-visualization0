@@ -17,6 +17,7 @@ import LooksOneIcon from '@material-ui/icons/LooksOne';
 
 // Get Map
 import WholeMap from '../../Map/Select/WholeMap';
+import EducationSelectorMap from './EducationSelectorMap';
 
 function TabContainer({ children, map, classes }) {
 	return (
@@ -79,7 +80,7 @@ function MapTabs() {
 			{/* SwipeableViews */}
 			<SwipeableViews axis="x" index={value} onChangeIndex={handleChangeIndex}>
 				<TabContainer map={true} classes={classes}>
-					<WholeMap />
+					<EducationSelectorMap />
 				</TabContainer>
 
 				<TabContainer map={true} classes={classes}>

@@ -9,6 +9,11 @@
     transform-origin: 50% 50%;
 }
 
+.full-st0.active {
+    fill: #d76fd2;
+    stroke: #ffffff;
+}
+
 .full-st0:hover {
     fill: #d76fd2;
     stroke: #ffffff;

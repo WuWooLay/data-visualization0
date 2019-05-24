@@ -1,5 +1,5 @@
 .LeftNav {
-
+    z-index: 2;
     background-color: blue;
     margin: 0;
     padding: 0;
@@ -113,7 +113,6 @@
         width: 100%;
     }
 }
-
 
 
 .LeftNav-Dispear {
