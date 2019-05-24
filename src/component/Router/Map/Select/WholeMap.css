@@ -1,0 +1,21 @@
+.full-st0 {
+	fill: #ffffff;
+	stroke: #d76fd2;
+    stroke-miterlimit: 10;
+    position: absolute;
+    z-index: 1;
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+    transform-origin: 50% 50%;
+}
+
+.full-st0:hover {
+    fill: #d76fd2;
+    stroke: #ffffff;
+    transform: scale(1.04);
+    transition: all 200ms ease-in-out;
+}
+
+.z-Index-1 {
+    display: inline-block;
+}

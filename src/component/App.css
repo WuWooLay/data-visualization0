@@ -10,6 +10,7 @@
     width: calc(100% - 16px);
     margin: 0 auto;
     max-width: 1200px;
+    padding-bottom: 80px;
     /* min-height: 100vh; */
     /* background: #ffffff; */
 }

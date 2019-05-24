@@ -5,7 +5,7 @@ import SwipeableViews from 'react-swipeable-views';
 // Translate
 import { FormattedMessage } from 'react-intl';
 
-import { makeStyles, useTheme } from '@material-ui/styles';
+import { makeStyles } from '@material-ui/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
@@ -15,22 +15,28 @@ import Typography from '@material-ui/core/Typography';
 import CheckBoxIcon from '@material-ui/icons/CheckBox';
 import LooksOneIcon from '@material-ui/icons/LooksOne';
 
-function TabContainer({ children, dir }) {
+// Get Map
+import WholeMap from '../../Map/Select/WholeMap';
+
+function TabContainer({ children, map, classes }) {
 	return (
-		<Typography component="div" dir={dir} style={{ padding: '1em' }}>
+		<Typography component="div" className={map ? classes.maxWidth200 : ''}>
 			{children}
 		</Typography>
 	);
 }
 
 TabContainer.propTypes = {
-	children: PropTypes.node.isRequired,
-	dir: PropTypes.string.isRequired
+	children: PropTypes.node.isRequired
 };
 
 const useStyles = makeStyles((theme) => ({
 	root: {
 		backgroundColor: '#ffffff'
+	},
+	maxWidth200: {
+		maxWidth: 200,
+		margin: '0 auto'
 	}
 }));
 
@@ -48,7 +54,7 @@ function MapTabs() {
 
 	return (
 		<div className={classes.root}>
-			<AppBar position="static" color="#ffffff">
+			<AppBar position="static" color="inherit">
 				<Tabs
 					value={value}
 					onChange={handleChange}
@@ -72,10 +78,13 @@ function MapTabs() {
 
 			{/* SwipeableViews */}
 			<SwipeableViews axis="x" index={value} onChangeIndex={handleChangeIndex}>
+				<TabContainer map={true} classes={classes}>
+					<WholeMap />
+				</TabContainer>
 
-				<TabContainer> Myanamr Map </TabContainer>
-				<TabContainer> One Select Map </TabContainer>
-
+				<TabContainer map={true} classes={classes}>
+					<WholeMap />
+				</TabContainer>
 			</SwipeableViews>
 			{/* SwipeableViews End*/}
 		</div>

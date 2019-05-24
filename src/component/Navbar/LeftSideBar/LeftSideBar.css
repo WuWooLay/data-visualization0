@@ -51,6 +51,7 @@
     flex-grow: 1;
     flex-flow: wrap;
     text-align: center;
+    background-color: #ffffff;
 }
 @media screen and (min-width: 960px) {
     .LeftNav li {

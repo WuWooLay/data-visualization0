@@ -13,7 +13,7 @@ import messages_mm from '../translations/mm.json';
 import LeftSideBar from './Navbar/LeftSideBar/LeftSideBar';
 
 // Transition
-import { TransitionGroup, Transition, CSSTransition } from 'react-transition-group';
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 // Import Css
 import './App.css';
