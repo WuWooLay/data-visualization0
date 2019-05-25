@@ -3,10 +3,14 @@
     "app.change_language": "ဘာသာစကားပြောင်းမည်",
     "app.dashboard": "ပင္မစာမ်က္ႏွာ",
     "app.education": "ပညာေရး",
+    "app.temple": "ဘုရားမ်ား",
     "app.overview": "ခ်ံဳငံုၾကည့္",
     "app.question": "ဘာလဲ?",
 
     "map.select": "ေရြးမွတ္",
-    "map.each": "တစ္ခုခ်င္း"
+    "map.each": "တစ္ခုခ်င္း",
+
+    "temple.select": "ေရြးမွတ္",
+    "temple.each": "တစ္ခုခ်င္း"
     
 }

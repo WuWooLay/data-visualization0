@@ -11,23 +11,25 @@ import { MuiThemeProvider } from '@material-ui/core/styles';
 import { addLocaleData } from 'react-intl';
 import locale_en from 'react-intl/locale-data/en';
 
-
 // Redux And Action
-import { createStore } from 'redux';
+import thunk from 'redux-thunk';
+import { createStore,  applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import { RootReducer } from './reducer';
-import { addSomething } from './action';
+import { fetchTemple } from './action/temple';
+// import { addSomething } from './action';
 
 addLocaleData([ ...locale_en ]);
 
-const store = createStore(RootReducer);
+const store = createStore(RootReducer, applyMiddleware(thunk));
 store.subscribe(() => console.log(store.getState()));
-store.dispatch(addSomething());
+// store.dispatch(addSomething());
+store.dispatch(fetchTemple());
 
 ReactDOM.render(
 	<Provider store={store}>
 		<MuiThemeProvider theme={theme}>
-				<App />
+			<App />
 		</MuiThemeProvider>
 	</Provider>,
 	document.getElementById('root')

@@ -21,6 +21,11 @@
     transition: all 200ms ease-in-out;
 }
 
+.full-st0.active:hover {
+    fill: #ffffff !important;
+    stroke: #d76fd2 !important;
+}
+
 .z-Index-1 {
     display: inline-block;
 }

@@ -6,6 +6,12 @@
         "path": "/"
     },
     {
+        "name": "Temple",
+        "language": "app.temple",
+        "icon": "/svg/navleft/temple.svg",
+        "path": "/temple"
+    },
+    {
         "name": "Education",
         "language": "app.education",
         "icon": "/svg/navleft/education.svg",

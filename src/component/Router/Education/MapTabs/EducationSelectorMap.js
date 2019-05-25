@@ -20,12 +20,13 @@ import {
 	Magwe,
 	Mandalay,
 	Sagaing,
-	Tanintharyi
+	Tanintharyi,
+	Naypyidaw
 } from '../../Map/Select/List/List';
 
 class EducationSelectorMap extends Component {
 	render() {
-        console.log(this.props);
+		console.log(this.props);
 		let { addEductaionSelector, selectedDivision } = this.props;
 		return (
 			<WrapMap>
@@ -84,6 +85,10 @@ class EducationSelectorMap extends Component {
 				<Tanintharyi
 					onclick={() => addEductaionSelector('Tanintharyi')}
 					active={Boolean(selectedDivision.filter((data) => data === 'Tanintharyi').length)}
+				/>
+				<Naypyidaw
+					onclick={() => addEductaionSelector('Naypyidaw')}
+					active={Boolean(selectedDivision.filter((data) => data === 'Naypyidaw').length)}
 				/>
 			</WrapMap>
 		);

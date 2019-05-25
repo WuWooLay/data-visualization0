@@ -18,8 +18,12 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group';
 // Import Css
 import './App.css';
 
+// Dispatch Groupd
+import { fetchTemple } from '../action/temple';
+
 // Router Conponents
 import Education from './Router/Education/Education';
+import Temple from './Router/Temple/Temple';
 
 const messages = {
 	en: messages_en,
@@ -48,8 +52,17 @@ class App extends Component {
 									>
 										<Switch location={location}>
 											<Route path="/" exact component={() => <h1> Home </h1>} />
+											<Route
+												path="/temple"
+												exact
+												component={Temple}
+											/>
 											<Route path="/overview" exact component={() => <h1> Overview </h1>} />
-											<Route path="/education" exact component={Education} />
+											<Route
+												path="/education"
+												exact
+												component={Education}
+											/>
 											<Route render={() => <h2> Page Not Found 404 </h2>} />
 										</Switch>
 									</CSSTransition>
@@ -70,4 +83,6 @@ function mapStateToProps(state) {
 	};
 }
 
-export default connect(mapStateToProps, null)(App);
+export default connect(mapStateToProps, {
+	fetchTemple
+})(App);

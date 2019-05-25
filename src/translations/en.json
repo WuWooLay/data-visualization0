@@ -3,9 +3,13 @@
     "app.change_language": "Change Language",
     "app.dashboard": "Dashboard",
     "app.education": "Education",
+    "app.temple": "Temple",
     "app.overview": "Overview",
     "app.question": "What?",
 
     "map.select": "Select",
-    "map.each": "Each"
+    "map.each": "Each",
+
+    "temple.select": "Select",
+    "temple.each": "Each"
 }
