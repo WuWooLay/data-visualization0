@@ -7,11 +7,25 @@
     transition: all 300ms ease-in-out;
     cursor: pointer;
     transform-origin: 50% 50%;
+    stroke-width: 2;
+    animation: stroke-animate 1.5s linear forwards;
 }
 
 .full-st0.active {
     fill: #d76fd2;
     stroke: #ffffff;
+}
+
+@keyframes stroke-animate {
+    0% {
+        stroke-dasharray: 2000;
+        stroke-dashoffset: 2000;
+    }
+
+    100% {
+        stroke-dasharray: 2000;
+        stroke-dashoffset: 0;
+    }
 }
 
 .full-st0:hover {

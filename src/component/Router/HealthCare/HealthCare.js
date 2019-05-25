@@ -7,7 +7,7 @@ import { withStyles } from '@material-ui/core/styles';
 import LinearProgress from '@material-ui/core/LinearProgress';
 
 // Dispatch
-import { fetchTemple } from '../../../action/temple';
+// import { fetchTemple } from '../../../action/temple';
 
 // Import Component
 import MapTabs from './MapTabs/MapTabs';
@@ -31,11 +31,7 @@ const styles = (theme) => {
 	};
 };
 
-class Temple extends Component {
-	componentWillMount() {
-		console.log('fetchTemple');
-		this.props.fetchTemple();
-	}
+class HealthCare extends Component {
 
 	render() {
 		const { classes, temple } = this.props;
@@ -43,7 +39,6 @@ class Temple extends Component {
 		return (
 			<Grid container spacing={8}>
 				<Grid item xs={12} sm={6} lg={4} className={classes.marginBottom}>
-					{temple.length === 0 ? <LinearProgress /> : ''}
 					<MapTabs />
 				</Grid>
 
@@ -55,8 +50,6 @@ class Temple extends Component {
 	}
 }
 function mapStateToProps(state) {
-	return {
-		temple: state.Temple
-	};
+	return {};
 }
-export default connect(mapStateToProps, { fetchTemple })(withStyles(styles)(Temple));
+export default connect(mapStateToProps, null)(withStyles(styles)(HealthCare));

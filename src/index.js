@@ -13,10 +13,21 @@ import locale_en from 'react-intl/locale-data/en';
 
 // Redux And Action
 import thunk from 'redux-thunk';
-import { createStore,  applyMiddleware } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import { RootReducer } from './reducer';
 import { fetchTemple } from './action/temple';
+import {
+	fetchHealthCarePersonal,
+	fetchHealthCareMostDiseases,
+	fetchHealthCareHospital,
+	fetchHealthCareClinics,
+	fetchHealthCareRuralHealth,
+	fetchHealthCareWalkingDisability,
+	fetchHealthCareSeeingDisability,
+	fetchHealthCareHearingDisability,
+	fetchHealthCareRememberingDisability
+} from './action/healthcare';
 // import { addSomething } from './action';
 
 addLocaleData([ ...locale_en ]);
@@ -24,7 +35,20 @@ addLocaleData([ ...locale_en ]);
 const store = createStore(RootReducer, applyMiddleware(thunk));
 store.subscribe(() => console.log(store.getState()));
 // store.dispatch(addSomething());
-store.dispatch(fetchTemple());
+
+// HealthCare List
+store.dispatch((dispatch) => {
+	dispatch(fetchTemple());
+	dispatch(fetchHealthCarePersonal());
+	dispatch(fetchHealthCareMostDiseases());
+	dispatch(fetchHealthCareHospital());
+	dispatch(fetchHealthCareClinics());
+	dispatch(fetchHealthCareRuralHealth());
+	dispatch(fetchHealthCareWalkingDisability());
+	dispatch(fetchHealthCareSeeingDisability());
+	dispatch(fetchHealthCareHearingDisability());
+	dispatch(fetchHealthCareRememberingDisability());
+});
 
 ReactDOM.render(
 	<Provider store={store}>

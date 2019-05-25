@@ -24,6 +24,7 @@ import { fetchTemple } from '../action/temple';
 // Router Conponents
 import Education from './Router/Education/Education';
 import Temple from './Router/Temple/Temple';
+import HealthCare from './Router/HealthCare/HealthCare';
 
 const messages = {
 	en: messages_en,
@@ -62,6 +63,11 @@ class App extends Component {
 												path="/education"
 												exact
 												component={Education}
+											/>
+											<Route
+												path="/healthcare"
+												exact
+												component={HealthCare}
 											/>
 											<Route render={() => <h2> Page Not Found 404 </h2>} />
 										</Switch>

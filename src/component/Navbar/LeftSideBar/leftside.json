@@ -6,6 +6,12 @@
         "path": "/"
     },
     {
+        "name": "Health Care",
+        "language": "app.healthcare",
+        "icon": "/svg/navleft/healthcare.svg",
+        "path": "/healthcare"
+    },
+    {
         "name": "Temple",
         "language": "app.temple",
         "icon": "/svg/navleft/temple.svg",
