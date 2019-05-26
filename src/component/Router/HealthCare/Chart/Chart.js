@@ -174,7 +174,7 @@ class Chart extends Component {
 			total_health_most_disease.DISDD17 += data.DISDD17 !== undefined ? parseInt(data.DISDD17) : 0;
 		});
 
-		console.log('most_disease', total_health_most_disease);
+		// console.log('most_disease', total_health_most_disease);
 
 		return (
 			<Grid container alignContent={'center'} justify={'flex-start'} spacing={8}>

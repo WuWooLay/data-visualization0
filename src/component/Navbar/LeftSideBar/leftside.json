@@ -22,11 +22,5 @@
         "language": "app.education",
         "icon": "/svg/navleft/education.svg",
         "path": "/education"
-    },
-    {
-        "name": "Overview",
-        "language": "app.overview",
-        "icon": "/svg/navleft/overview.svg",
-        "path": "/overview"
     }
 ]

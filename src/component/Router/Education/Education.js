@@ -15,7 +15,7 @@ const styles = (theme) => {
 			flexGrow: 1
 		},
 		paper: {
-			padding: theme.spacing.unit ,
+			padding: theme.spacing.unit,
 			textAlign: 'center',
 			color: theme.palette.text.secondary
 		}
@@ -28,17 +28,20 @@ class Education extends Component {
 
 		return (
 			<Grid container spacing={8}>
-
 				<Grid item xs={12} sm={6} lg={4}>
 					{/* <Paper className={classes.paper}>xs=12</Paper> */}
 					<MapTabs />
 				</Grid>
-				
+
 				<Grid item sm={3} lg={4}>
-					<Paper className={classes.paper}>xs=12</Paper>
+					<Paper className={classes.paper}>
+						<h3> Coming Soon ...</h3>
+					</Paper>
 				</Grid>
-                <Grid item sm={3} lg={4}>
-					<Paper className={classes.paper}>xs=12</Paper>
+				<Grid item sm={3} lg={4}>
+					<Paper className={classes.paper}>
+						<h3> Coming Soon ...</h3>
+					</Paper>
 				</Grid>
 			</Grid>
 		);

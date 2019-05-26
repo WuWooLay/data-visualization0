@@ -6,7 +6,7 @@
     "app.temple": "ဘုရားမ်ား",
     "app.overview": "ခ်ံဳငံုၾကည့္",
     "app.question": "ဘာလဲ?",
-    "app.healthcare": "က်မ္းမာေရးေစာင့္ေရွာက္မႈ",
+    "app.healthcare": "က်န္းမာေရးေစာင့္ေရွာက္မႈ",
     "map.select": "ေရြးမွတ္",
     "map.each": "တစ္ခုခ်င္း",
     "temple.select": "ေရြးမွတ္",
@@ -17,10 +17,12 @@
     "chart.PHYSNB": "ဆရာ၀န္သီးေရ",
     "chart.NURSNB": "သူနာျပဳဦးေရ",
     "chart.HSNB": "လ/ထက်န္းမာေရးမွဴးဦးေရ",
+
+    "app.health_care_most_die_disease": "ေရာဂါျဖင့္ေသဆံုးဦးေရ",
     "app.health_care_most_disease": "အျဖစ္မ်ားေသာေရာဂါမ်ား",
     "app.health_hospital": "ေဆးရံုအေျခအေနမ်ား",
     "app.select_all": "အကုန္မွတ္မယ္",
     "app.clear_all": "အကုန္ရွင္းမယ္",
     "app.radio_ratio": "ေရဒီယုိအခ်ိဳးမ်ား",
-    "app.communication_ratio": "Communication Ratio"
+    "app.communication_ratio": "ဆက္သြယ္ေရး အခ်ိဳး"
 }

@@ -2,7 +2,7 @@
 export const FETCH_HEALTHCARE_PERSONAL = 'FETCH_HEALTHCARE_PERSONAL';
 
 const fetchHealthCarePersonalJson = () => {
-	const url = 'http://data4change.herokuapp.com/dataset/health-care-personal';
+	const url = 'https://data4change.herokuapp.com/dataset/health-care-personal';
 	return fetch(`${url}`).then((data) => data.json());
 };
 
@@ -26,7 +26,7 @@ export const fetchHealthCarePersonal = () => {
 export const FETCH_HEALTHCARE_MOST_DISEASES = 'FETCH_HEALTHCARE_MOST_DISEASES';
 
 const fetchHealthCareMostDiseasesJson = () => {
-	const url = 'http://data4change.herokuapp.com/dataset/most-disease';
+	const url = 'https://data4change.herokuapp.com/dataset/most-disease';
 	return fetch(`${url}`).then((data) => data.json());
 };
 
@@ -50,7 +50,7 @@ export const fetchHealthCareMostDiseases = () => {
 export const FETCH_HEALTHCARE_HOSPITAL = 'FETCH_HEALTHCARE_HOSPITAL';
 
 const fetchHealthCareHospitalJson = () => {
-	const url = 'http://data4change.herokuapp.com/dataset/hospitals';
+	const url = 'https://data4change.herokuapp.com/dataset/hospitals';
 	return fetch(`${url}`).then((data) => data.json());
 };
 
@@ -74,7 +74,7 @@ export const fetchHealthCareHospital = () => {
 export const FETCH_HEALTHCARE_CLINICS = 'FETCH_HEALTHCARE_CLINICS';
 
 const fetchHealthCareClinicsJson = () => {
-	const url = 'http://data4change.herokuapp.com/dataset/clinics';
+	const url = 'https://data4change.herokuapp.com/dataset/clinics';
 	return fetch(`${url}`).then((data) => data.json());
 };
 
@@ -98,7 +98,7 @@ export const fetchHealthCareClinics = () => {
 export const FETCH_HEALTHCARE_RURAL_HEALTH = 'FETCH_HEALTHCARE_RURAL_HEALTH';
 
 const fetchHealthCareRuralHealthJson = () => {
-	const url = 'http://data4change.herokuapp.com/dataset/rural-health';
+	const url = 'https://data4change.herokuapp.com/dataset/rural-health';
 	return fetch(`${url}`).then((data) => data.json());
 };
 
@@ -122,7 +122,7 @@ export const fetchHealthCareRuralHealth = () => {
 export const FETCH_HEALTHCARE_WALKING_DISABILITY = 'FETCH_HEALTHCARE_WALKING_DISABILITY';
 
 const fetchHealthCareWalkingDisabilityJson = () => {
-	const url = 'http://data4change.herokuapp.com/dataset/walking-disability';
+	const url = 'https://data4change.herokuapp.com/dataset/walking-disability';
 	return fetch(`${url}`).then((data) => data.json());
 };
 
@@ -146,7 +146,7 @@ export const fetchHealthCareWalkingDisability = () => {
 export const FETCH_HEALTHCARE_SEEING_DISABILITY = 'FETCH_HEALTHCARE_SEEING_DISABILITY';
 
 const fetchHealthCareSeeingDisabilityJson = () => {
-	const url = 'http://data4change.herokuapp.com/dataset/seeing-disability';
+	const url = 'https://data4change.herokuapp.com/dataset/seeing-disability';
 	return fetch(`${url}`).then((data) => data.json());
 };
 
@@ -170,7 +170,7 @@ export const fetchHealthCareSeeingDisability = () => {
 export const FETCH_HEALTHCARE_HEARING_DISABILITY = 'FETCH_HEALTHCARE_HEARING_DISABILITY';
 
 const fetchHealthCareHearingDisabilityJson = () => {
-	const url = 'http://data4change.herokuapp.com/dataset/hearing-disability';
+	const url = 'https://data4change.herokuapp.com/dataset/hearing-disability';
 	return fetch(`${url}`).then((data) => data.json());
 };
 
@@ -194,7 +194,7 @@ export const fetchHealthCareHearingDisability = () => {
 export const FETCH_HEALTHCARE_REMEBERING_DISABILITY = 'FETCH_HEALTHCARE_REMEBERING_DISABILITY';
 
 const fetchHealthCareRemeberingDisabilityJson = () => {
-	const url = 'http://data4change.herokuapp.com/dataset/remembering-disability';
+	const url = 'https://data4change.herokuapp.com/dataset/remembering-disability';
 	return fetch(`${url}`).then((data) => data.json());
 };
 

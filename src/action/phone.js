@@ -2,7 +2,7 @@
 export const FETCH_PH = 'FETCH_PH';
 
 const fetchPhJson = () => {
-	const url = 'http://data4change.herokuapp.com/dataset/phone';
+	const url = 'https://data4change.herokuapp.com/dataset/phone';
 	return fetch(`${url}`).then((data) => data.json());
 };
 

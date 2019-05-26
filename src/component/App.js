@@ -25,6 +25,7 @@ import { fetchTemple } from '../action/temple';
 import Education from './Router/Education/Education';
 import Temple from './Router/Temple/Temple';
 import HealthCare from './Router/HealthCare/HealthCare';
+import Dashboard from './Router/Dashboard/Dashboard';
 
 const messages = {
 	en: messages_en,
@@ -52,7 +53,7 @@ class App extends Component {
 										classNames="fade"
 									>
 										<Switch location={location}>
-											<Route path="/" exact component={() => <h1> Home </h1>} />
+											<Route path="/" exact component={Dashboard} />
 											<Route
 												path="/temple"
 												exact

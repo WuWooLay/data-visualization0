@@ -1,7 +1,7 @@
 export const FETCH_TEMPLE = 'FETCH_TEMPLE';
 
 const fetchTempleJson = () => {
-	return fetch(`http://data4change.herokuapp.com/dataset/hearing-disability`).then((data) => data.json());
+	return fetch(`https://data4change.herokuapp.com/dataset/hearing-disability`).then((data) => data.json());
 };
 
 const receiveTemple = (objdata) => {

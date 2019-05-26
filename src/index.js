@@ -26,7 +26,8 @@ import {
 	fetchHealthCareWalkingDisability,
 	fetchHealthCareSeeingDisability,
 	fetchHealthCareHearingDisability,
-	fetchHealthCareRememberingDisability
+	fetchHealthCareRememberingDisability,
+	selectWholeHealthCare
 } from './action/healthcare';
 import { fetchRadio } from './action/radio';
 import { fetchPh } from './action/phone';
@@ -52,6 +53,7 @@ store.dispatch((dispatch) => {
 	dispatch(fetchHealthCareRememberingDisability());
 	dispatch(fetchRadio());
 	dispatch(fetchPh());
+	dispatch(selectWholeHealthCare());
 });
 
 ReactDOM.render(

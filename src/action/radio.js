@@ -2,7 +2,7 @@
 export const FETCH_RADIO = 'FETCH_RADIO';
 
 const fetchRadioJson = () => {
-	const url = 'http://data4change.herokuapp.com/dataset/radio';
+	const url = 'https://data4change.herokuapp.com/dataset/radio';
 	return fetch(`${url}`).then((data) => data.json());
 };
 

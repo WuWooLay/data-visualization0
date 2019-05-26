@@ -20,6 +20,7 @@ import LooksOneIcon from '@material-ui/icons/LooksOne';
 // Get Map
 import WholeMap from '../../Map/Select/WholeMap';
 import HealthCareSelectorMap from './HealthCareSelectorMap';
+import EachMap from './EachMap';
 
 function TabContainer({ children, map, classes }) {
 	return (
@@ -112,7 +113,7 @@ function MapTabs(props) {
 				</TabContainer>
 
 				<TabContainer map={true} classes={classes}>
-					<WholeMap />
+					<EachMap />
 				</TabContainer>
 			</SwipeableViews>
 			{/* SwipeableViews End*/}

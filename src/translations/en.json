@@ -21,6 +21,7 @@
     "chart.NURSNB": "NURSNB",
     "chart.HSNB": "HSNB",
 
+    "app.health_care_most_die_disease": "Most Die Disease",
     "app.health_care_most_disease": "Most Disease",
     "app.health_hospital": "Hospital condition",
     "app.select_all": "Select All",

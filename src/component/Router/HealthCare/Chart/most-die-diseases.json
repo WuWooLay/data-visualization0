@@ -1,0 +1,40 @@
+{
+    "en": {
+        "DISDD01": "Malaria-Dead People No ",
+        "DISDD02": "Diarrhea -Dead People No ",
+        "DISDD03": "TB-Dead People No ",
+        "DISDD04": "Dysentery-Dead People No ",
+        "DISDD05": "Hepatitis-Dead People No ",
+        "DISDD06": "Pneumonia-Dead People No ",
+        "DISDD07": "Typhoid-Dead People No ",
+        "DISDD08": "ARI-Dead People No ",
+        "DISDD09": "Poison-Dead People No ",
+        "DISDD10": "Flu-Dead People No ",
+        "DISDD11": "Flu-Dead People No ",
+        "DISDD12": "High Blood Pressure-Dead People No ",
+        "DISDD13": "Stomahache-Dead People No ",
+        "DISDD14": "Respiratory Disease-Dead People No ",
+        "DISDD15": "Injured-Dead People No ",
+        "DISDD16": "Snake Bite-Dead People No ",
+        "DISDD17": "H1N1-Dead People No "
+    },
+    "mm": {
+        "DISDD01": "ငှက်ဖျား -သေဆုံးဦးရေ",
+        "DISDD02": "ဝမ်းလျှော-သေဆုံးဦးရေ",
+        "DISDD03": "တီဘီ-သေဆုံးဦးရေ",
+        "DISDD04": "ဝမ်းကိုက်-သေဆုံးဦးရေ",
+        "DISDD05": "အသဲရောင်-သေဆုံးဦးရေ",
+        "DISDD06": "အဆုတ်ရောင်-သေဆုံးဦးရေ",
+        "DISDD07": "အူရောင်ငန်းဖျား-သေဆုံးဦးရေ",
+        "DISDD08": "အေအာအိုင်-သေဆုံးဦးရေ",
+        "DISDD09": "အဆိပ်သင့်-သေဆုံးဦးရေ",
+        "DISDD10": "တုပ်ကွေး-သေဆုံးဦးရေ",
+        "DISDD11": "သွေးလွန်တုပ် ကွေး-သေဆုံးဦးရေ",
+        "DISDD12": "သွေးတိုး-သေဆုံးဦးရေ",
+        "DISDD13": "အစာအိမ်-သေဆုံးဦးရေ",
+        "DISDD14": "အသက်ရှူလမ်းကြောင်းပိုးဝင်-သေဆုံးဦးရေ",
+        "DISDD15": "ထိခိုက်ရှနာ-သေဆုံးဦးရေ",
+        "DISDD16": "မြွေကိုက်-သေဆုံးဦးရေ",
+        "DISDD17": "H1N1-သေဆုံးဦးရေ"
+    }
+}

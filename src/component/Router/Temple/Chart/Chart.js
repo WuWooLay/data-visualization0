@@ -32,7 +32,7 @@ class Chart extends Component {
 			<Grid container alignContent={'center'} justify={'center'} spacing={8}>
 				<Grid item xs={12} sm={12} lg={6}>
 					<Paper className={classes.paper}>
-						<h2> Bar Nyar </h2>
+						<h2> Our Temple .... </h2>
 						<Doughnut
 							data={{
 								datasets: [
@@ -55,7 +55,7 @@ class Chart extends Component {
 
 				<Grid item xs={12} sm={12} lg={6}>
 					<Paper className={classes.paper}>
-						<h2> Bar Nyar </h2>
+						<h2> Other Temples .... </h2>
 						<Doughnut
 							data={{
 								datasets: [
@@ -78,7 +78,7 @@ class Chart extends Component {
 
 				<Grid item xs={12} sm={12} lg={6}>
 					<Paper className={classes.paper}>
-						<h2> Bar Nyar </h2>
+						<h2> Will Update Soon .... </h2>
 						<Doughnut
 							data={{
 								datasets: [
@@ -101,7 +101,7 @@ class Chart extends Component {
 
 				<Grid item xs={12} sm={12} lg={6}>
 					<Paper className={classes.paper}>
-						<h2> Bar Nyar </h2>
+						<h2> Will Update Soon .... </h2>
 						<Doughnut
 							data={{
 								datasets: [
@@ -126,7 +126,6 @@ class Chart extends Component {
 	}
 }
 function mapStateToProps(state) {
-	return {
-	};
+	return {};
 }
 export default connect(mapStateToProps, null)(withStyles(styles)(Chart));
