@@ -12,5 +12,20 @@
     "map.each": "Each",
 
     "temple.select": "Select",
-    "temple.each": "Each"
+    "temple.each": "Each",
+    
+    "app.health_care_person": "Health Care Person",
+    "app.health_care_population": "Population",
+    "chart.POP": "POP",
+    "chart.PHYSNB": "PHYSNB",
+    "chart.NURSNB": "NURSNB",
+    "chart.HSNB": "HSNB",
+
+    "app.health_care_most_disease": "Most Disease",
+    "app.health_hospital": "Hospital condition",
+    "app.select_all": "Select All",
+    "app.clear_all": "Clear All",
+    "app.radio_ratio": "Radio Ratio",
+    "app.communication_ratio": "Communication Ratio"
+
 }

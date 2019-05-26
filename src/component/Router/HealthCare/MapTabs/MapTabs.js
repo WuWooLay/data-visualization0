@@ -11,6 +11,8 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 
+import Button from '@material-ui/core/Button';
+
 // Icons
 import CheckBoxIcon from '@material-ui/icons/CheckBox';
 import LooksOneIcon from '@material-ui/icons/LooksOne';
@@ -41,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
 	}
 }));
 
-function MapTabs() {
+function MapTabs(props) {
 	const classes = useStyles();
 	const [ value, setValue ] = React.useState(0);
 
@@ -66,13 +68,13 @@ function MapTabs() {
 					<Tab
 						className="mm-font"
 						icon={<CheckBoxIcon />}
-						label={<FormattedMessage id='temple.select' defaultMessage={'Select'} />}
+						label={<FormattedMessage id="temple.select" defaultMessage={'Select'} />}
 					/>
 
 					<Tab
 						className="mm-font"
 						icon={<LooksOneIcon />}
-						label={<FormattedMessage id='temple.each' defaultMessage={'Each'} />}
+						label={<FormattedMessage id="temple.each" defaultMessage={'Each'} />}
 					/>
 				</Tabs>
 			</AppBar>
@@ -81,6 +83,32 @@ function MapTabs() {
 			<SwipeableViews axis="x" index={value} onChangeIndex={handleChangeIndex}>
 				<TabContainer map={true} classes={classes}>
 					<HealthCareSelectorMap />
+					<div style={{ marginBottom: 40 }} />
+					<Button
+						onClick={() => {
+							props.selectWholeHealthCare();
+						}}
+						className="mm-font"
+						variant="outlined"
+						color="primary"
+						size="small"
+						style={{ position: 'absolute', left: 0, bottom: 0 }}
+					>
+						<CheckBoxIcon />
+						<FormattedMessage id="app.select_all" defaultMessage={'Select All'} />
+					</Button>
+					<Button
+						onClick={() => {
+							props.clearWholeHealthCare();
+						}}
+						className="mm-font"
+						variant="outlined"
+						color="primary"
+						size="small"
+						style={{ position: 'absolute', right: 0, bottom: 0 }}
+					>
+						<FormattedMessage id="app.clear_all" defaultMessage={'Clear All'} />
+					</Button>
 				</TabContainer>
 
 				<TabContainer map={true} classes={classes}>

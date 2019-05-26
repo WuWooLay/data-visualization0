@@ -8,7 +8,6 @@ import { withStyles } from '@material-ui/core/styles';
 // Import Charts
 // import PieChart from '../../../AnyChart/PieChart';
 import Doughnut, { DoughnutColor } from '../../../../chartjs/Doughnut';
-import Pie from '../../../../chartjs/Pie';
 
 const styles = (theme) => {
 	// console.log('theme', theme);
@@ -128,7 +127,6 @@ class Chart extends Component {
 }
 function mapStateToProps(state) {
 	return {
-		temple: state.Temple
 	};
 }
 export default connect(mapStateToProps, null)(withStyles(styles)(Chart));

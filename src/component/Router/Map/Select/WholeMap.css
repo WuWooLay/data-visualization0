@@ -36,8 +36,8 @@
 }
 
 .full-st0.active:hover {
-    fill: #ffffff !important;
     stroke: #d76fd2 !important;
+    opacity: 0.5 !important;
 }
 
 .z-Index-1 {

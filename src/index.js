@@ -28,6 +28,8 @@ import {
 	fetchHealthCareHearingDisability,
 	fetchHealthCareRememberingDisability
 } from './action/healthcare';
+import { fetchRadio } from './action/radio';
+import { fetchPh } from './action/phone';
 // import { addSomething } from './action';
 
 addLocaleData([ ...locale_en ]);
@@ -48,6 +50,8 @@ store.dispatch((dispatch) => {
 	dispatch(fetchHealthCareSeeingDisability());
 	dispatch(fetchHealthCareHearingDisability());
 	dispatch(fetchHealthCareRememberingDisability());
+	dispatch(fetchRadio());
+	dispatch(fetchPh());
 });
 
 ReactDOM.render(

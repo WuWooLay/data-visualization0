@@ -214,7 +214,6 @@ export const fetchHealthCareRememberingDisability = () => {
 	};
 };
 
-
 // Add HealthCare
 export const ADD_SELECT_HEALTHCARE = 'ADD_SELECT_HEALTHCARE';
 
@@ -225,3 +224,24 @@ export const addSelectHelathCare = (SPR_CODE) => {
 		SPR_CODE
 	};
 };
+
+// Selecte Whole Map
+export const SELECT_WHOLE_HEALTHCARE = 'SELECT_WHOLE_HEALTHCARE';
+
+export const selectWholeHealthCare = () => {
+	return {
+		type: SELECT_WHOLE_HEALTHCARE
+	};
+};
+
+
+// Claer Whole Map
+
+export const CLEAR_WHOLE_HEALTHCARE = 'CLEAR_WHOLE_HEALTHCARE';
+
+export const clearWholeHealthCare = () => {
+	return {
+		type: CLEAR_WHOLE_HEALTHCARE
+	};
+};
+

@@ -14,6 +14,8 @@ import HealthCareSeeingDisability from './HealthCareSeeingDisability';
 import HealthCareHearingDisability from './HealthCareHearingDisability';
 import HealthCareRemeberingDisability from './HealthCareRemeberingDisability';
 import HealthCareSelect from './HealthCareSelect';
+import Radio from './Radio';
+import Phone from './Phone';
 
 export const RootReducer = combineReducers({
 	Language,
@@ -29,5 +31,7 @@ export const RootReducer = combineReducers({
 	HealthCareSeeingDisability,
 	HealthCareHearingDisability,
 	HealthCareRemeberingDisability,
-	HealthCareSelect
+	HealthCareSelect,
+	Radio,
+	Phone
 });

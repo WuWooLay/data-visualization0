@@ -7,11 +7,20 @@
     "app.overview": "ခ်ံဳငံုၾကည့္",
     "app.question": "ဘာလဲ?",
     "app.healthcare": "က်မ္းမာေရးေစာင့္ေရွာက္မႈ",
-
     "map.select": "ေရြးမွတ္",
     "map.each": "တစ္ခုခ်င္း",
-
     "temple.select": "ေရြးမွတ္",
-    "temple.each": "တစ္ခုခ်င္း"
-    
+    "temple.each": "တစ္ခုခ်င္း",
+    "app.health_care_person": "က်န္းမာေရး ေစာင့္ေရွာက္သူ",
+    "app.health_care_population": "ျမိဳ့နယ္လူဦးေရ",
+    "chart.POP": "ျမိဳ့နယ္ဦးေရ",
+    "chart.PHYSNB": "ဆရာ၀န္သီးေရ",
+    "chart.NURSNB": "သူနာျပဳဦးေရ",
+    "chart.HSNB": "လ/ထက်န္းမာေရးမွဴးဦးေရ",
+    "app.health_care_most_disease": "အျဖစ္မ်ားေသာေရာဂါမ်ား",
+    "app.health_hospital": "ေဆးရံုအေျခအေနမ်ား",
+    "app.select_all": "အကုန္မွတ္မယ္",
+    "app.clear_all": "အကုန္ရွင္းမယ္",
+    "app.radio_ratio": "ေရဒီယုိအခ်ိဳးမ်ား",
+    "app.communication_ratio": "Communication Ratio"
 }
