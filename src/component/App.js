@@ -26,6 +26,7 @@ import Education from './Router/Education/Education';
 import Temple from './Router/Temple/Temple';
 import HealthCare from './Router/HealthCare/HealthCare';
 import Dashboard from './Router/Dashboard/Dashboard';
+import Yangon from './Router/Yangon/Yangon';
 
 const messages = {
 	en: messages_en,
@@ -54,22 +55,11 @@ class App extends Component {
 									>
 										<Switch location={location}>
 											<Route path="/" exact component={Dashboard} />
-											<Route
-												path="/temple"
-												exact
-												component={Temple}
-											/>
+											<Route path="/temple" exact component={Temple} />
 											<Route path="/overview" exact component={() => <h1> Overview </h1>} />
-											<Route
-												path="/education"
-												exact
-												component={Education}
-											/>
-											<Route
-												path="/healthcare"
-												exact
-												component={HealthCare}
-											/>
+											<Route path="/education" exact component={Education} />
+											<Route path="/healthcare" exact component={HealthCare} />
+											<Route path="/healthcare/yangon" exact component={Yangon} />
 											<Route render={() => <h2> Page Not Found 404 </h2>} />
 										</Switch>
 									</CSSTransition>

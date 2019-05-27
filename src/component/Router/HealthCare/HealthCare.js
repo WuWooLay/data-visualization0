@@ -37,14 +37,14 @@ class HealthCare extends Component {
 
 		return (
 			<Grid container spacing={8}>
-				<Grid item xs={12} sm={6} lg={4} className={classes.marginBottom}>
+				<Grid item xs={12} md={12} lg={4} className={classes.marginBottom}>
 					<MapTabs
 						selectWholeHealthCare={this.props.selectWholeHealthCare}
 						clearWholeHealthCare={this.props.clearWholeHealthCare}
 					/>
 				</Grid>
 
-				<Grid item xs={12} sm={6} lg={8}>
+				<Grid item xs={12} md={12} lg={8}>
 					<Chart />
 				</Grid>
 

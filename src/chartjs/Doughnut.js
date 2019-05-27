@@ -100,6 +100,8 @@ export default (props) => {
 			data={{
 				...props.data
 			}}
+			height={null}
+			width={null}
 			options={{
 				legend: {
 					position: 'bottom',
@@ -109,7 +111,8 @@ export default (props) => {
 					}
 				},
 				responsive: true,
-				aspectRatio: 3
+				maintainAspectRatio: true,
+				aspectRatio: 0.8
 			}}
 		/>
 	);

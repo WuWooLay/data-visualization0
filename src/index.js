@@ -31,6 +31,7 @@ import {
 } from './action/healthcare';
 import { fetchRadio } from './action/radio';
 import { fetchPh } from './action/phone';
+import { fetchTelevision } from './action/television';
 // import { addSomething } from './action';
 
 addLocaleData([ ...locale_en ]);
@@ -53,6 +54,7 @@ store.dispatch((dispatch) => {
 	dispatch(fetchHealthCareRememberingDisability());
 	dispatch(fetchRadio());
 	dispatch(fetchPh());
+	dispatch(fetchTelevision());
 	dispatch(selectWholeHealthCare());
 });
 
